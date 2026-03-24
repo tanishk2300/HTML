@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table in HTML </title>
+</head>
+<style>
+    
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            border: 2px solid black;/* this is use to make the border solid black  */
+            
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+
+<body>
+    <h1>table in HTML
+    </h1>
+    <table>
+    <!-- head of the table -->
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>role</th>
+                <th>salary</th>
+            </tr>
+
+
+        </thead>
+        <!-- this is body of the table  -->
+        <tbody>
+            <!-- tr=table row -->
+            <tr>
+                <td>tanishk</td>
+                <td>ai enginear </td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>tanishk</td>
+                <td>data science</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>tanishk</td>
+                <td>m-tech</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td colspan="3">thanks</td><!-- here one cell take the three colomb as given (colspan is use to take the entire colam(block) in the table)  -->
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+</head>
+
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: transparent;
+            padding: 25px 35px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4A6CF7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2e51dd;
+        }
+
+        p {
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+    </style>
+
+<body>
+    
+    <form action="/submit.php">
+        <!-- for name input  -->
+        <div>
+            <label for="name.  ">name </label>
+            <input type="text"placeholder="enter your name "required>
+        </div>
+        <!-- for passward input -->
+        <div>
+            <label for="passward">passward</label>
+            <input type="text"placeholder="passward"required>
+            
+        </div>
+        <!-- for email input inbuild @require -->
+        <div>
+            <label for="email">email</label>
+            <input type="text"placeholder="email" required>
+
+        </div>
+        <!-- for date input with selecion  -->
+         <div>
+            <label for="date">date</label>
+            <input type="date"placeholder="date" required>
+         </div>
+         <!-- gender verification   -->
+          <div>
+            <label for="gender">gender</label required>
+            <select  id="select">
+                <option value="disable selecion">gender require</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+          </div>
+          <!-- these are the radio butten  -->
+        <div>
+            <p>subscription plan
+            </p>
+            <input id="basic" type="radio" name="subscription" value="basic">
+            <label for="basic">basic</label>
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="premium">premium</label>
+            <input id="VIP" type="radio" name="subscription" value="VIP">
+            <label for="VIP">VIP</label>
+
+
+        </div>
+        <div>
+
+            <!-- for cheackbox -->
+             <input id="term" type="checkbox" required>
+             <label for="term">i will agree with your term and condition </label>
+
+        </div>
+
+         <!--  -->
+        <div>
+            <label for="comment">comments</label>
+            <textarea id="comment "placeholder="enter your comment "rows="4"> </textarea >
+            
+        </div>
+        <!-- submit butten  -->
+         <div>
+            <button type="button">submit</button>
+        </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
